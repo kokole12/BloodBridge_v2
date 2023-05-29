@@ -1,0 +1,9 @@
+{%extends 'donate/base.html'%}
+{%load crispy_forms_tags%}
+{% block content%}
+    <div class="container">
+        <div class="border-top pt-3"><small class="text-muted">You have been logged out
+            <a href="{% url 'login' %}" class="ml-2">Login again</a>
+        </small></div>
+    </div>
+{%endblock content%}

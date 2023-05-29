@@ -1,0 +1,16 @@
+{%extends 'donate/base.html'%}
+{%load crispy_forms_tags%}
+{% block content%}
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-class">
+                <legend class="border-bottom mb-4">Post New Blood Donation Event</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-secondary" type="submit">Post Event</button>
+            </div>
+        </form>
+    </div>
+{%endblock content%}
