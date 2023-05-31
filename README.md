@@ -35,6 +35,9 @@ The database of choice for this application is the SQLite database which makes d
 * Minor Use of Bootstrap
 
 # Vesion 2 : [BLoodBridge V2](https://github.com/kokole12/BloodBridge_v2)
-* Full APplication Breakdown Into Features for easier Management
+* Full Application Breakdown Into Features for easier Management
 * Django Crispy Forms
-* Verification ANd account activation Links
+* Verification And account activation Links
+* Django Mail
+* Events
+* Appointment Creation and Deletion
