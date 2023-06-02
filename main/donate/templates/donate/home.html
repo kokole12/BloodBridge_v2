@@ -10,7 +10,7 @@
             </h1>
             <div class="row align-items-center g-3">
                 <div class="col-auto">
-                    <a href="{%url 'register'%}" class="btn btn-secondary">Become a Donor</a>
+                    <a href="{%url 'register'%}" class="btn btn-danger">Become a Donor</a>
                 </div>
             </div>
         </div>
@@ -21,7 +21,62 @@
     </div>
 </div>
 
-<section class="events-section">
+
+<section>
+    <div class="container-fluid bg-danger mt-5 p-5">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-4 text-center p-2">
+                <h1 style="font-weight:bold;">15K+</h1>
+                <p class="text-light">Registered Donors Accross Africa</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 text-center p-2">
+                <h1 style="font-weight:bold;">44</h1>
+                <p class="text-light">African Countries Using the Platform</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 text-center p-2">
+                <h1 style="font-weight:bold;">1.1K+</h1>
+                <p class="text-light">Lives Saved Every Year</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container mt-5">
+        <h1 class="text-center text-danger">
+            Hospitals
+        </h1>
+        <table class="table text-center">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mulago Hospital</td>
+                <td>Kampala, Uganda</td>
+                <td>
+                    <a href="#" class="btn btn-danger">More</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Reddington Hospital</td>
+                <td>Lagos, Nigeria</td>
+                <td>
+                    <a href="#" class="btn btn-danger">More</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</section>
+{% comment %} <section class="events-section">
     <div class="container text-center">
         <h1 class="">Events</h1>
     </div>
@@ -34,6 +89,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> {% endcomment %}
 
 {%endblock content%}

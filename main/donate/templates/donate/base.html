@@ -14,7 +14,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-              <a class="navbar-brand" href="#">BloodBridge</a>
+              <a class="navbar-brand text-danger text-bold" href="#" style="font-weight: bold; letter-spacing: 5px;">BloodBridge</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -43,13 +43,17 @@
                       <li><a class="dropdown-item" href="#">View appointment</a></li>
                     </ul>
                   </li>
-                  <a class="nav-link" href="{%url 'logout'%}">
-                    <i class="bi bi-box-arrow-left"></i> Logout</a>
+                  <button class="btn btn-outline-danger btn-sm rounded-pill">
+                    <a class="nav-link" href="{%url 'logout'%}">
+                      <i class="bi bi-box-arrow-left text-danger"></i><span class="text-danger"> Logout</span></a>
+                  </button>
                   {% else %}
                   <a class="nav-link" href="{%url 'register'%}">
                     <i class="bi bi-person-plus"></i> Register</a>
-                  <a class="nav-link" href="{%url 'login'%}">
-                    <i class="bi bi-box-arrow-in-right"></i> Login</a>
+                  <button class="btn btn-sm btn-outline-secondary rounded-pill">
+                    <a class="nav-link" href="{%url 'login'%}">
+                      <i class="bi bi-box-arrow-in-right"></i> Login</a>
+                  </button>
                   {%endif%}
                 </div>
               </div>
