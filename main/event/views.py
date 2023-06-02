@@ -31,6 +31,7 @@ class EventsList(ListView):
     model = Event
     context_object_name = 'event'
     ordering = ['-created_date']
+    paginate_by = 3
 
 class EventUpdate(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Event
