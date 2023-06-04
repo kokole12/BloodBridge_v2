@@ -42,10 +42,16 @@
 </section>
 <section>
     <div class="container mt-5">
-        <h1 class="text-center text-danger">
+        <h1 class="text-center text-danger" style="font:bold;">
             Hospitals
         </h1>
-        <table class="table text-center">
+        <div class="container w-80">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control border-dark" placeholder="Hospital name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-danger" type="submit" id="button-addon2">Search</button>
+              </div>
+          </div>
+        <table class="table table-bordered text-center mb-5">
             <thead>
               <tr>
                 <th scope="col">Id</th>
@@ -72,23 +78,58 @@
                     <a href="#" class="btn btn-danger">More</a>
                 </td>
               </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Khan Hospital</td>
+                <td>Nairobi, Kenya</td>
+                <td>
+                    <a href="#" class="btn btn-danger">More</a>
+                </td>
+              </tr>
             </tbody>
           </table>
     </div>
 </section>
-{% comment %} <section class="events-section">
-    <div class="container text-center">
-        <h1 class="">Events</h1>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-            </div>
-            <div class="col-12 col-md-6 col-lg-6">
+<footer>
+    <div class="container-fluid h-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <h5 class="text-danger" style="font-weight:bold; letter-spacing:5px;">BloodBrige</h5>
+                    <p class="text-muted">&copy 2023 BloodBridge</p>
+                    <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Linkedin</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <h5 class="" style="font-weight:bold; ">Company</h5>
+                    <p>About</p>
+                    <p>Partners</p>
+                    <p>Careers</p>
+                    <p>Investors</p>
+                    <p>Cookie policy</p>
+                    <p>Legal & privacy</p>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <h5 class="" style="font-weight:bold; ">support</h5>
+                    <p>Contact us</p>
+                    <p>Help center</p>
+                    <p>Account creation</p>
+                    <p>Appointments</p>
+                    <p>Events</p>
+                </div>
             </div>
         </div>
     </div>
-</section> {% endcomment %}
+</footer>
 
 {%endblock content%}
