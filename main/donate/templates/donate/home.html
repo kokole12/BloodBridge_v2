@@ -46,11 +46,15 @@
             Hospitals
         </h1>
         <div class="container w-80">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control border-dark" placeholder="Hospital name" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-danger" type="submit" id="button-addon2">Search</button>
-              </div>
-          </div>
+            <form action="{%url 'search-hospital'%}" method=POST>
+                {% csrf_token%}
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control border-dark" placeholder="Hospital name" aria-label="Recipient's username" aria-describedby="button-addon2"
+                    name="search">
+                    <button class="btn btn-danger" type="submit" id="button-addon2">Search</button>
+                </div>
+            </form>
+        </div>
         <table class="table table-bordered text-center mb-5">
             <thead>
               <tr>
@@ -75,7 +79,7 @@
                 <td>Reddington Hospital</td>
                 <td>Lagos, Nigeria</td>
                 <td>
-                    <a href="#" class="btn btn-danger">More</a>
+                    <a href="" class="btn btn-danger">More</a>
                 </td>
               </tr>
               <tr>

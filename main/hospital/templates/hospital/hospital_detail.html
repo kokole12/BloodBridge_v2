@@ -1,0 +1,15 @@
+{% extends 'donate/base.html' %}
+
+{% block content%}
+<div class="container mt-5">
+    
+    <div class="card" style="width: 18rem;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Hospital details</h5>
+          <p class="card-text">Name - {{object.name}}</p>
+          <p class="card-text">Contact - {{object.city}}</p>
+          <p class="card-text">country - {{object.country}}</p>
+        </div>
+      </div>
+</div>
+{%endblock%}

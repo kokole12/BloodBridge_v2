@@ -23,9 +23,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("donate.urls")),
     path('', include("event.urls")),
+    path('', include("hospital.urls")),
     path('register/',view=donor_views.register, name='register'),
     path('login/', view=Auth_views.LoginView.as_view(template_name="donor/login.html"), name='login'),
     path('logout/', view=Auth_views.LogoutView.as_view(template_name="donor/logout.html"), name="logout"),
+    path('verify_email/',donor_views.verify_email, name="verify-email"),
     path('activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/',  
         donor_views.activate, name='activate'),
 ]

@@ -1,0 +1,10 @@
+{%extends 'donate/base.html'%}
+{%load crispy_forms_tags%}
+{% block content%}
+    <div class="container">
+        <form method="POST" action="{%url 'search-hospital'%}">
+            {% csrf_token %}
+            <h1>No search result</h1>
+        </form>
+    </div>
+{%endblock content%}

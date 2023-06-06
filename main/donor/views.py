@@ -36,7 +36,7 @@ def register(request):
             )  
             email.send()  
             #return HttpResponse('Please confirm your email address to complete the registration')   
-            return redirect('login')
+            return redirect('verify-email')
     else:
         form = UserRegistrationForm()
     return render(request, 'donor/register.html', {"form": form})
@@ -53,4 +53,7 @@ def activate(request, uidb64, token):
         user.save()  
         return HttpResponse('Thank you for your email confirmation. Now you can login your account.')  
     else:  
-        return HttpResponse('Activation link is invalid!')  
+        return HttpResponse('Activation link is invalid!')
+
+def verify_email(request):
+    return render(request, "donor/verify_email.html")

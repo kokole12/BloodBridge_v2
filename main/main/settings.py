@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'donate',
     'donor',
     'event',
+    'hospital',
 ]
 
 MIDDLEWARE = [

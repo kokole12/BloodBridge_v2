@@ -1,0 +1,27 @@
+{%extends 'donate/base.html'%}
+{%load crispy_forms_tags%}
+{% block content%}
+    <div class="container">
+        <form method="POST" action="{%url 'search-hospital'%}">
+            {% csrf_token %}
+            {%for hosp in hospital%}
+                {% if hosp is not None%}
+                    <div class="container mt-5">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><h1>{{hosp.name}}</h1></li>
+                                <li class="list-group-item">state/District - {{hosp.state}}</li>
+                                <li class="list-group-item">city - {{hosp.city}}</li>
+                                <li class="list-group-item">country - {{hosp.country}}</li>
+                                <li class="list-group-item">email - {{hosp.email}}</li>
+                                <li class="list-group-item">Tel - {{hosp.phone}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                {% else%}
+                <h3>No search result</h3>
+                {%endif%}
+            {%endfor%}
+        </form>
+    </div>
+{%endblock content%}
