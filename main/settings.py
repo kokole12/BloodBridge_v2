@@ -134,8 +134,8 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 LOGIN_REDIRECT_URL = 'home'
 
-EMAIL_USE_TLS = True  
-EMAIL_HOST = 'smtp.gmail.com'  
-EMAIL_HOST_USER = 'bloodbridge1@gmail.com'  
-EMAIL_HOST_PASSWORD = 'wflwidljzrykjswq'  
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'bloodbridge1@gmail.com'
+EMAIL_HOST_PASSWORD = 'mndfcjrairrlebho'
 EMAIL_PORT = 587
